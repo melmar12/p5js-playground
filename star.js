@@ -2,6 +2,7 @@
 // http://codingtra.in
 // http://patreon.com/codingtrain
 // Code for: https://youtu.be/17WoOqgXsRM
+// modified by mel ;)
 
 function Star() {
   this.x = random(-width, width);
@@ -26,7 +27,7 @@ function Star() {
     var sx = map(this.x / this.z, 0, 1, 0, width);
     var sy = map(this.y / this.z, 0, 1, 0, height);
 
-    var r = map(this.z, 0, width, 16, 0);
+    var r = map(this.z, 0, width, 3, 0);
     ellipse(sx, sy, r, r);
 
     var px = map(this.x / this.pz, 0, 1, 0, width);
