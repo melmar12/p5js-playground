@@ -25,6 +25,19 @@ function draw() {
   speed = 1.5;
 
   background(0);
+
+  loadPixels();
+  for (var y = 0; y < height; y++) {
+    for (var x = 0; x < width; x++) {
+      var index = (x + y * width)*4;
+      pixels[index+0] = y-250;
+      pixels[index+1] = 60;
+      pixels[index+2] = 130;
+      pixels[index+3] = y;
+    }
+  }
+  updatePixels();
+
   translate(width / 2, height / 2);
   for (var i = 0; i < stars.length; i++) {
     stars[i].update();
