@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>StarField_p5.js</title>
+    <title></title>
 
     <link rel="stylesheet" href="styles.css"/>
+    <script src="scripts.js" charset="utf-8"></script>
 
   </head>
   <body>
@@ -20,27 +21,7 @@
     </div>
 
     <div id="second-module">
-
     </div>
 
-
-    <script type="text/javascript">
-
-
-    window.onload = function myFunction() {
-        //insert star field
-        var x = document.createElement("IFRAME");
-        x.setAttribute("src", "stars.html");
-        x.style.display = "block"; // removes gap
-        x.style.zIndex = "-1";
-        x.style.width = "100%";
-        var elmHeight = document.getElementById('module').clientHeight.toString();
-        x.style.height = elmHeight + "px";
-        x.style.marginTop = "-" + elmHeight + "px";
-        x.style.border = "none";
-        document.getElementById('star-field').appendChild(x);
-    }
-
-  </script>
   </body>
 </html>
